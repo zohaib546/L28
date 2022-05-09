@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body class="m-auto grid grid-cols-12 overflow-x-hidden">
+		<header class="col-span-12 bg-palette-1 p-3">
+			<div class="flex w-full items-center">
+				<div class="flex w-full flex-1 items-center rounded bg-white p-2 pr-3">
+					<div class="mr-4">
+						<img class="cursor-pointer" src="./icons/menu-icon.svg" alt="menu" />
+					</div>
+					<div class="flex items-center space-x-1">
+						<img class="" src="./icons/menu-search-icon.svg" alt="search icon" />
+						<input
+							class="w-full font-righteous text-xs outline-none"
+							placeholder="Waar ben je naar op zoek?"
+							type="text"
+						/>
+					</div>
+				</div>
+				<img class="-ml-2" src="./icons/logo.svg" alt="logo" />
+			</div>
+			<div class="no-scrollbar flex items-center space-x-2 overflow-x-auto">
+				<button class="whitespace-nowrap rounded-lg bg-white py-1 px-6 text-palette-1">Mode</button>
+				<button class="whitespace-nowrap rounded-lg bg-white py-1 px-6 text-palette-1">
+					Elektronica
+				</button>
+				<button class="whitespace-nowrap rounded-lg bg-white py-1 px-6 text-palette-1">
+					Huis en tuin
+				</button>
+				<button class="whitespace-nowrap rounded-lg bg-white py-1 px-6 text-palette-1">
+					Boeken
+				</button>
+				<button class="whitespace-nowrap rounded-lg bg-white py-1 px-6 text-palette-1">
+					films
+				</button>
+			</div>
+			<ul class="mt-5 flex list-none justify-between space-x-3">
+				<li>
+					<a href="#">
+						<div class="relative">
+							<span
+								class="absolute top-[-10px] right-[15px] flex h-5 w-5 items-center justify-center rounded-full bg-[#FF4E00] text-[10px] text-white"
+								>13</span
+							>
+							<img class="m-auto" src="./icons/menu-compare-icon.svg" alt="menu icon" />
+						</div>
+						<span class="font-roboto text-xs font-bold text-white">VERGELIJKEN</span></a
+					>
+				</li>
+				<li>
+					<a href="#">
+						<div class="relative">
+							<span
+								class="absolute top-[-10px] right-[5px] flex h-5 w-5 items-center justify-center rounded-full bg-[#FF4E00] text-[10px] text-white"
+								>5</span
+							><img class="m-auto" src="./icons/menu-heart-icon.svg" alt="menu icon" />
+						</div>
+						<span class="font-roboto text-xs font-bold text-white">FAVORIET</span></a
+					>
+				</li>
+				<li>
+					<a href="#">
+						<div class="relative">
+							<span
+								class="absolute top-[-10px] right-[15px] flex h-5 w-5 items-center justify-center rounded-full bg-[#FF4E00] text-[10px] text-white"
+								>17</span
+							><img class="m-auto" src="./icons/menu-cart-icon.svg" alt="menu icon" />
+						</div>
+						<span class="font-roboto text-xs font-bold text-white">WINKELWAGEN</span></a
+					>
+				</li>
+				<li>
+					<a href="#">
+						<div class="relative">
+							<span
+								class="absolute top-[-10px] right-[15px] flex h-5 w-5 items-center justify-center rounded-full bg-[#FF4E00] text-[10px] text-white"
+								>20</span
+							><img class="m-auto" src="./icons/menu-envelope-icon.svg" alt="menu icon" />
+						</div>
+						<span class="font-roboto text-xs font-bold text-white">BERICHTEN</span></a
+					>
+				</li>
+			</ul>
+		</header>
+		<section class="relative col-span-12">
+			<img class="w-full" src="./images/hero-cover.png" alt="cover" />
+			<button class="absolute bottom-5 right-3 flex cursor-pointer items-center bg-white px-4 py-2">
+				<span class="font-righteous text-sm">Nu trending</span>
+				<img src="./icons/button-pulse-icon.svg" alt="pulse" />
+			</button>
+		</section>
+		<section class="col-span-12 space-y-1 bg-[#EDF3F4] p-3">
+			<h2 class="text-xl text-palette-1">Bestel jouw nieuwe winterjas met</h2>
+			<h3 class="font-roboto text-xl font-light text-palette-1">ongelooflijke kortingen!</h3>
+			<button
+				class="category-card__btn flex items-center justify-center bg-palette-3 px-3 py-2 font-righteous text-lg text-black"
+			>
+				Bekijk meer
+			</button>
+		</section>
+		<section class="col-span-12 py-5 px-3">
+			<div class="section-heading flex items-center justify-between">
+				<h3 class="font-roboto text-lg">
+					<span class="inline-block h-3 border-2 border-palette-3"></span> Categorieën
+				</h3>
+				<div class="flex w-40 max-w-sm items-center rounded-md border-2 border-black p-2">
+					<input
+						class="w-full font-righteous text-[8px] outline-none"
+						placeholder="Waar ben ben je naar op zoek?"
+						type="text"
+					/>
+					<img class="" src="./icons/search-icon.svg" alt="search icon" />
+				</div>
+			</div>
+			<div class="categories-slider flex w-full overflow-y-auto overflow-x-scroll py-3">
+				<div class="category-card mr-3 shrink-0 text-center">
+					<div
+						class="category-card__header m-auto flex h-24 w-24 items-center justify-center rounded-full bg-palette-6 p-4"
+					>
+						<img src="./icons/category-icon-3.svg" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body p-4 text-white">
+						<h2 class="category-card__title font-roboto text-palette-1">Speelgoed</h2>
+					</div>
+				</div>
+				<div class="category-card mr-3 shrink-0 text-center">
+					<div
+						class="category-card__header m-auto flex h-24 w-24 items-center justify-center rounded-full bg-palette-5 p-4"
+					>
+						<img src="./icons/category-icon-2.svg" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body p-4 text-white">
+						<h2 class="category-card__title font-roboto text-palette-1">Laptops</h2>
+					</div>
+				</div>
+				<div class="category-card mr-3 shrink-0 text-center">
+					<div
+						class="category-card__header m-auto flex h-24 w-24 items-center justify-center rounded-full bg-palette-4 p-4"
+					>
+						<img src="./icons/category-icon-1.svg" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body p-4 text-white">
+						<h2 class="category-card__title font-roboto text-palette-1">Kunst</h2>
+					</div>
+				</div>
+				<div class="category-card mr-3 shrink-0 text-center">
+					<div
+						class="category-card__header m-auto flex h-24 w-24 items-center justify-center rounded-full bg-palette-5 p-4"
+					>
+						<img src="./icons/category-icon-2.svg" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body p-4 text-white">
+						<h2 class="category-card__title font-roboto text-palette-1">Laptops</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="col-span-12 bg-[#EDF3F4] p-3">
+			<h2 class="mb-3 text-center text-3xl text-palette-7">Dagdeal</h2>
+			<div class="space-y-4">
+				<div class="flex items-center justify-center">
+					<div class="rounded-md bg-white p-4">
+						<img src="./images/helicopter.png" alt="deal" />
+					</div>
+					<div
+						class="-ml-4 flex h-[80px] w-[80px] items-center justify-center rounded-full border-8 border-[#EDF3F4] bg-palette-7 p-2 text-xl font-bold text-white"
+					>
+						-30%
+					</div>
+				</div>
+				<div class="flex items-center justify-center space-x-1">
+					<div class="bg-white px-1 font-righteous text-xl text-palette-7">2</div>
+					<div class="bg-white px-1 font-righteous text-xl text-palette-7">3</div>
+					<span class="px-1 font-righteous text-xl text-palette-7">:</span>
+					<div class="bg-white px-1 font-righteous text-xl text-palette-7">2</div>
+					<div class="bg-white px-1 font-righteous text-xl text-palette-7">7</div>
+					<span class="px-1 font-righteous text-xl text-palette-7">:</span>
+					<div class="bg-white px-1 font-righteous text-xl text-palette-7">1</div>
+					<div class="bg-white px-1 font-righteous text-xl text-palette-7">2</div>
+				</div>
+				<p class="text-center font-bold text-palette-7">
+					Nu voor <span class="text-2xl">€45.00</span>
+					<span class="text-palette-1 line-through">€55.00</span>
+				</p>
+				<button
+					class="mx-auto flex items-center justify-center bg-palette-3 px-3 py-2 font-righteous text-lg text-white"
+				>
+					Nu Winkelen
+				</button>
+			</div>
+		</section>
+		<section class="col-span-12 py-5 px-3">
+			<h3 class="font-roboto text-lg">
+				<span class="inline-block h-3 border-2 border-palette-3"></span> Categorieën
+			</h3>
+			<div class="categories-slider flex w-full overflow-y-auto overflow-x-scroll py-3">
+				<div class="category-card mr-3 w-60 shrink-0">
+					<div class="category-card__header h-60 bg-[#BFD46F] pt-4">
+						<img src="./images/category-img-1.png" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body bg-palette-1 p-5 text-white">
+						<h2 class="category-card__title font-righteous text-2xl">Gadgets</h2>
+						<p class="category-card__description py-2">Verkrijgbaar in bekende merken!</p>
+						<button
+							class="category-card__btn flex w-full items-center justify-center bg-palette-3 py-2 font-righteous text-lg text-black"
+						>
+							Bekijk meer
+						</button>
+					</div>
+				</div>
+				<div class="category-card mr-3 w-60 shrink-0">
+					<div class="category-card__header h-60 bg-palette-6 pt-4">
+						<img src="./images/category-img-1.png" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body bg-palette-1 p-5 text-white">
+						<h2 class="category-card__title font-righteous text-2xl">Gadgets</h2>
+						<p class="category-card__description py-2">Verkrijgbaar in bekende merken!</p>
+						<button
+							class="category-card__btn flex w-full items-center justify-center bg-palette-3 py-2 font-righteous text-lg text-black"
+						>
+							Bekijk meer
+						</button>
+					</div>
+				</div>
+				<div class="category-card mr-3 w-60 shrink-0">
+					<div class="category-card__header h-60 bg-[#BFD46F] pt-4">
+						<img src="./images/category-img-1.png" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body bg-palette-1 p-5 text-white">
+						<h2 class="category-card__title font-righteous text-2xl">Gadgets</h2>
+						<p class="category-card__description py-2">Verkrijgbaar in bekende merken!</p>
+						<button
+							class="category-card__btn flex w-full items-center justify-center bg-palette-3 py-2 font-righteous text-lg text-black"
+						>
+							Bekijk meer
+						</button>
+					</div>
+				</div>
+				<div class="category-card mr-3 w-60 shrink-0">
+					<div class="category-card__header h-60 bg-palette-6 pt-4">
+						<img src="./images/category-img-1.png" alt="category img" class="m-auto h-full" />
+					</div>
+					<div class="category-card__body bg-palette-1 p-5 text-white">
+						<h2 class="category-card__title font-righteous text-2xl">Gadgets</h2>
+						<p class="category-card__description py-2">Verkrijgbaar in bekende merken!</p>
+						<button
+							class="category-card__btn flex w-full items-center justify-center bg-palette-3 py-2 font-righteous text-lg text-black"
+						>
+							Bekijk meer
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="col-span-12 bg-[#EDF3F4] p-3">
+			<h3 class="font-righteous text-2xl text-palette-5">Nieuwe lading binnen!</h3>
+			<div class="grid grid-cols-2 gap-3">
+				<div>
+					<h4 class="my-4 font-roboto text-xl text-palette-1">
+						Verkrijgbaar in<br />
+						bekende merken!
+					</h4>
+					<button
+						class="flex items-center justify-center bg-palette-3 px-3 py-2 font-righteous text-lg text-white"
+					>
+						Bekijk meer
+					</button>
+				</div>
+				<div>
+					<img src="./images/fitness-band.png" alt="fitness band" />
+				</div>
+			</div>
+		</section>
+
+		<section class="col-span-12 py-5 px-3">
+			<h3 class="font-roboto text-lg">
+				<span class="inline-block h-3 border-2 border-palette-3"></span> Populair bij L28
+			</h3>
+			<div class="product-slider flex w-full overflow-y-auto overflow-x-scroll py-3">
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-1.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-outlined.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-2.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-filled.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-3.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-outlined.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-4.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-filled.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-1.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-outlined.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-2.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-filled.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-slider flex w-full overflow-y-auto overflow-x-scroll py-3">
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-1.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-outlined.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-2.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-filled.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-3.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-outlined.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-4.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-filled.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-1.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-outlined.svg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="product-card relative mr-3 w-52 shrink-0">
+					<div class="product-card__header h-40 bg-palette-8 py-4 px-2">
+						<img src="./images/card-img-2.png" alt="product img" class="m-auto h-full" />
+					</div>
+					<div class="product-card__body py-2">
+						<h2 class="category-card__description truncate font-roboto">
+							Verkrijgbaar in bekende skjsh s ssj ksh jskhsjjh
+						</h2>
+						<p class="category-card__price py-2 font-bold text-palette-7">€39,-</p>
+					</div>
+					<div class="product-card__favourite absolute top-2 right-2">
+						<div class="rounded-full bg-palette-8 p-2">
+							<img src="./icons/heart-filled.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="col-span-12 bg-palette-8 py-5 px-3">
+			<h3 class="font-roboto text-lg font-bold text-palette-1">
+				<span class="inline-block h-3 border-2 border-palette-3"></span>
+				Recent bezochte artikelen
+			</h3>
+			<div class="recent-product-slider flex w-full overflow-y-auto overflow-x-scroll py-3">
+				<div class="recent-product-card mr-3 flex h-28 w-72 shrink-0">
+					<div class="recent-product-card__header relative w-2/5 shrink-0 bg-white py-4 px-2">
+						<img src="./images/card-img-1.png" alt="recent-product img" class="m-auto h-full" />
+						<div class="recent-product-card__favourite absolute top-2 right-2 w-7">
+							<div class="rounded-full bg-palette-8 p-1.5">
+								<img src="./icons/heart-outlined.svg" alt="" class="w-full" />
+							</div>
+						</div>
+					</div>
+					<div class="product-card__body w-3/5 bg-palette-8 py-3 px-2">
+						<h2 class="category-card__title truncate pb-2 font-roboto text-palette-2">
+							4-op-1-rij spel hout
+						</h2>
+						<div class="rating flex gap-2 pb-2 pt-0">
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<span class="text-xs text-palette-2">(120)</span>
+						</div>
+						<p class="category-card__price py-2 text-palette-2">€ 10,29 Incl. btw</p>
+					</div>
+				</div>
+				<div class="recent-product-card mr-3 flex h-28 w-72 shrink-0">
+					<div class="recent-product-card__header relative w-2/5 shrink-0 bg-white py-4 px-2">
+						<img src="./images/card-img-2.png" alt="recent-product img" class="m-auto h-full" />
+						<div class="recent-product-card__favourite absolute top-2 right-2 w-7">
+							<div class="rounded-full bg-palette-8 p-1.5">
+								<img src="./icons/heart-filled.svg" alt="" class="w-full" />
+							</div>
+						</div>
+					</div>
+					<div class="product-card__body w-3/5 bg-palette-8 py-3 px-2">
+						<h2 class="category-card__title truncate pb-2 font-roboto text-palette-2">
+							4-op-1-rij spel hout
+						</h2>
+						<div class="rating flex gap-2 pb-2 pt-0">
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<span class="text-xs text-palette-2">(120)</span>
+						</div>
+						<p class="category-card__price py-2 text-palette-2">€ 10,29 Incl. btw</p>
+					</div>
+				</div>
+				<div class="recent-product-card mr-3 flex h-28 w-72 shrink-0">
+					<div class="recent-product-card__header relative w-2/5 shrink-0 bg-white py-4 px-2">
+						<img src="./images/card-img-3.png" alt="recent-product img" class="m-auto h-full" />
+						<div class="recent-product-card__favourite absolute top-2 right-2 w-7">
+							<div class="rounded-full bg-palette-8 p-1.5">
+								<img src="./icons/heart-outlined.svg" alt="" class="w-full" />
+							</div>
+						</div>
+					</div>
+					<div class="product-card__body w-3/5 bg-palette-8 py-3 px-2">
+						<h2 class="category-card__title truncate pb-2 font-roboto text-palette-2">
+							4-op-1-rij spel hout
+						</h2>
+						<div class="rating flex gap-2 pb-2 pt-0">
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<span class="text-xs text-palette-2">(120)</span>
+						</div>
+						<p class="category-card__price py-2 text-palette-2">€ 10,29 Incl. btw</p>
+					</div>
+				</div>
+				<div class="recent-product-card mr-3 flex h-28 w-72 shrink-0">
+					<div class="recent-product-card__header relative w-2/5 shrink-0 bg-white py-4 px-2">
+						<img src="./images/card-img-4.png" alt="recent-product img" class="m-auto h-full" />
+						<div class="recent-product-card__favourite absolute top-2 right-2 w-7">
+							<div class="rounded-full bg-palette-8 p-1.5">
+								<img src="./icons/heart-filled.svg" alt="" class="w-full" />
+							</div>
+						</div>
+					</div>
+					<div class="product-card__body w-3/5 bg-palette-8 py-3 px-2">
+						<h2 class="category-card__title truncate pb-2 font-roboto text-palette-2">
+							4-op-1-rij spel hout
+						</h2>
+						<div class="rating flex gap-2 pb-2 pt-0">
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<span class="text-xs text-palette-2">(120)</span>
+						</div>
+						<p class="category-card__price py-2 text-palette-2">€ 10,29 Incl. btw</p>
+					</div>
+				</div>
+				<div class="recent-product-card mr-3 flex h-28 w-72 shrink-0">
+					<div class="recent-product-card__header relative w-2/5 shrink-0 bg-white py-4 px-2">
+						<img src="./images/card-img-2.png" alt="recent-product img" class="m-auto h-full" />
+						<div class="recent-product-card__favourite absolute top-2 right-2 w-7">
+							<div class="rounded-full bg-palette-8 p-1.5">
+								<img src="./icons/heart-outlined.svg" alt="" class="w-full" />
+							</div>
+						</div>
+					</div>
+					<div class="product-card__body w-3/5 bg-palette-8 py-3 px-2">
+						<h2 class="category-card__title truncate pb-2 font-roboto text-palette-2">
+							4-op-1-rij spel hout
+						</h2>
+						<div class="rating flex gap-2 pb-2 pt-0">
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<span class="text-xs text-palette-2">(120)</span>
+						</div>
+						<p class="category-card__price py-2 text-palette-2">€ 10,29 Incl. btw</p>
+					</div>
+				</div>
+				<div class="recent-product-card mr-3 flex h-28 w-72 shrink-0">
+					<div class="recent-product-card__header relative w-2/5 shrink-0 bg-white py-4 px-2">
+						<img src="./images/card-img-1.png" alt="recent-product img" class="m-auto h-full" />
+						<div class="recent-product-card__favourite absolute top-2 right-2 w-7">
+							<div class="rounded-full bg-palette-8 p-1.5">
+								<img src="./icons/heart-filled.svg" alt="" class="w-full" />
+							</div>
+						</div>
+					</div>
+					<div class="product-card__body w-3/5 bg-palette-8 py-3 px-2">
+						<h2 class="category-card__title truncate pb-2 font-roboto text-palette-2">
+							4-op-1-rij spel hout
+						</h2>
+						<div class="rating flex gap-2 pb-2 pt-0">
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<img src="./icons/star.svg" alt="rating" />
+							<span class="text-xs text-palette-2">(120)</span>
+						</div>
+						<p class="category-card__price py-2 text-palette-2">€ 10,29 Incl. btw</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="col-span-12 p-3">
+			<h3 class="mb-2 font-roboto text-lg font-bold text-palette-1">
+				<span class="inline-block h-3 border-2 border-palette-3"></span>
+				Ondek alles bij L28!
+			</h3>
+			<div class="">
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Computer & Elektronica
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Herenmode
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Tuin
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Computer & Elektronica
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Herenmode
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Tuin
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Computer & Elektronica
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Herenmode
+				</button>
+				<button class="m-1 border border-[#656565] px-5 py-2 font-roboto text-sm text-[#656565]">
+					Tuin
+				</button>
+			</div>
+		</section>
+
+		<a
+			href="#"
+			class="fixed bottom-5 right-5 z-10 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-palette-4 p-4"
+		>
+			<img src="./icons/chevron-up.svg" alt="back to top" />
+		</a>
+	</body>
+</html>
